@@ -1,12 +1,4 @@
-import java.util.*;
-
-enum Operation
-{
-    ADD, SUBTRACT, MULTIPLY, DIVIDE
-}
-public class Test1 {
-
-    public static double basicCalculator(final Operation operation, final int num1, final int num2){
+public static double basicCalculator(Operation operation, int num1, int num2){
         double result = 0;
 	if (operation == ADD){
 		result = num1 + num2;
@@ -28,8 +20,4 @@ public class Test1 {
 
         return result;
     }
-
-    public static void main(final String[] args) {
-        System.out.println(basicCalculator(Operation.DIVIDE, 1, 2));
-    }
-}
+        
